@@ -40,22 +40,112 @@ function App() {
               height={300}
             />
           </div>
-          <h3>BackEnd Projects</h3>
-          <div className='d-flex justify-content-between flex-wrap mb-3'>
+          <h3>FrontEnd</h3>
+          <div className='d-flex justify-content-between align-items-center flex-wrap mb-3'>
             <ProjectCard
+              height={200}
+              name={'Currency chart'}
+              workpage={'https://mikhailkolomoitsev.github.io/currency-chart/'}
+              code={'https://github.com/MikhailKolomoitsev/currency-chart'}
+            />
+          </div>
+          <h3>BackEnd</h3>
+          <div className='d-flex justify-content-between align-items-center flex-wrap mb-3'>
+            <ProjectCard
+              height={200}
               name={'Exercise tracker'}
               workpage={'https://exercise-tracker-freecodecamp.herokuapp.com/'}
               code={'https://github.com/MikhailKolomoitsev/freeCodeCampNodejs/tree/Exercise-Tracker'}
             />
             <ProjectCard
+              height={200}
               name={'File Metadata Microservice'}
               workpage={'https://final-metadata-microservice.herokuapp.com/'}
               code={'https://github.com/MikhailKolomoitsev/freeCodeCampNodejs/tree/File-Metadata-Microservice'}
             />
             <ProjectCard
+              height={200}
               name={'URL Shortener Microservice'}
               workpage={'https://final-metadata-microservice.herokuapp.com/'}
               code={'https://github.com/MikhailKolomoitsev/freeCodeCampNodejs/tree/File-Metadata-Microservice'}
+            />
+          </div>
+          <div className='d-flex justify-content-between align-items-center flex-wrap mb-3'>
+            <ProjectCard
+              height={200}
+              name={'URL Shortener Microservice'}
+              workpage={'https://freecodecamp-nodejs-express.herokuapp.com/'}
+              code={'https://github.com/MikhailKolomoitsev/freeCodeCampNodejs/tree/boilerplate-project-headerparser'}
+            />
+            <ProjectCard
+              height={200}
+              name={'Timestamp Microservice'}
+              workpage={'https://timestamp-microservice-freecod.herokuapp.com/'}
+              code={'https://github.com/MikhailKolomoitsev/freeCodeCampNodejs/tree/Timestamp-Microservice'}
+            />
+            <ProjectCard
+              height={200}
+              name={'Online Shop'}
+              desc={'Back-end for online shop of devices'}
+              code={'https://github.com/MikhailKolomoitsev/onlineShop-server'}
+            />
+          </div>
+          <h3>JavaScript</h3>
+          <div className='d-flex justify-content-between align-items-center flex-wrap mb-3'>
+            <ProjectCard
+              height={150}
+              name={'AIM Game'}
+              workpage={'https://mikhailkolomoitsev.github.io/aim-game/'}
+              code={'https://github.com/MikhailKolomoitsev/aim-game'}
+            />
+            <ProjectCard
+              height={150}
+              name={'Mini Desk'}
+              workpage={'https://mikhailkolomoitsev.github.io/mini-desk/'}
+              code={'https://github.com/MikhailKolomoitsev/mini-desk'}
+            />
+            <ProjectCard
+              height={150}
+              name={'Slider Page for OnlineShop'}
+              workpage={'https://mikhailkolomoitsev.github.io/js-marathon-cards-1/'}
+              code={'https://github.com/MikhailKolomoitsev/js-marathon-cards-1'}
+            />
+          </div>
+          <div className='d-flex justify-content-between align-items-center flex-wrap mb-3'>
+            <ProjectCard
+              height={150}
+              name={'Birthday Card'}
+              workpage={'https://mikhailkolomoitsev.github.io/birthdayCard/'}
+              code={'https://github.com/MikhailKolomoitsev/birthdayCard'}
+            />
+            <ProjectCard
+              height={150}
+              name={'Color Switch'}
+              workpage={'https://github.com/MikhailKolomoitsev/goit-js-hw-11-color-switch'}
+              code={'https://mikhailkolomoitsev.github.io/goit-js-hw-11-color-switch/'}
+            />
+            <ProjectCard
+              height={150}
+              name={'Images Gallery'}
+              workpage={'https://mikhailkolomoitsev.github.io/goit-js-hw-08-gallery/'}
+              code={'https://github.com/MikhailKolomoitsev/goit-js-hw-08-gallery'}
+            />
+          </div>
+          <h3>WebUI</h3>
+          <div className='d-flex justify-content-between align-items-center flex-wrap mb-3' style={{width:555}}>
+            <ProjectCard
+              height={200}
+              name={'WebStudio'}
+              desc={'Ladning page for WebStudio project'}
+              workpage={'https://mikhailkolomoitsev.github.io/goit-markup-hw-08/'}
+              code={'https://github.com/MikhailKolomoitsev/goit-markup-hw-08'}
+            />
+            <ProjectCard
+              height={200}
+              name={'IceCream landing'}
+              desc={'Team project. Role: Scrum-master. My part of work: Hero, Icons SVG'}
+              workpage={'https://wlad-kryhin.github.io/parcel-project-template/'}
+              code={'https://mikhailkolomoitsev.github.io/goit-js-hw-11-color-switch/'}
             />
           </div>
       </div>
