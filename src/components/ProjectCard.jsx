@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap'
+import './style.css'
 
 const ProjectCard = ({ name, desc, workpage, code, back,height }) => {
 
@@ -17,7 +18,7 @@ const ProjectCard = ({ name, desc, workpage, code, back,height }) => {
             className='mt-3'
         >
             <Card
-                className='d-flex align-items-center flex-direction-column justify-content-between p-2'
+                className='d-flex align-items-center flex-direction-column justify-content-between p-2 project-card'
                 onClick={() => window.location.href = workpage }
                 style={{
                     width: 310,

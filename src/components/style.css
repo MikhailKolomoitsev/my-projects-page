@@ -1,0 +1,7 @@
+.project-card{
+    transition: 0.3s all ease-in-out;
+}
+
+.project-card:hover, .project-card:focus{
+ margin-top: -10px;
+}
