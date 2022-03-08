@@ -48,6 +48,13 @@ function App() {
               workpage={'https://mikhailkolomoitsev.github.io/currency-chart/'}
               code={'https://github.com/MikhailKolomoitsev/currency-chart'}
             />
+            <ProjectCard
+              height={200}
+              name={'Firebase'}
+              desc={'Auth technology with social-webs'}
+              workpage={'https://mikhailkolomoitsev.github.io/React-Firebase-Auth/'}
+              code={'https://github.com/MikhailKolomoitsev/React-Firebase-Auth'}
+            />
           </div>
           <h3>BackEnd</h3>
           <div className='d-flex justify-content-between align-items-center flex-wrap mb-3'>
