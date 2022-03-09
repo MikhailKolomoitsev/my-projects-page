@@ -52,8 +52,8 @@ function App() {
               height={200}
               name={'Firebase'}
               desc={'Auth technology with social-webs'}
-              workpage={'https://mikhailkolomoitsev.github.io/React-Firebase-Auth/'}
-              code={'https://github.com/MikhailKolomoitsev/React-Firebase-Auth'}
+              workpage={'https://github.com/MikhailKolomoitsev/firebase-copy'}
+              code={'https://github.com/MikhailKolomoitsev/firebase-copy'}
             />
           </div>
           <h3>BackEnd</h3>
