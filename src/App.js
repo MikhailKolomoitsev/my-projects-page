@@ -35,8 +35,7 @@ function App() {
               desc=
               {'Team project about searching movies, and adding favorite movies to a client personal library. Vanilla JS, npm-packages, bootstrap and SCSS. Role: ScrumMaster'}
               workpage={'https://wlad-kryhin.github.io/project-JS-NightCoders/'}
-              code={'https://github.com/EKhoroshko/backend-kapusta'}
-              back={'https://github.com/EKhoroshko/frontend-kapusta'}
+              code={'https://github.com/wlad-kryhin/project-JS-NightCoders/tree/master'}
               height={300}
             />
           </div>
@@ -52,8 +51,15 @@ function App() {
               height={200}
               name={'Firebase'}
               desc={'Auth technology with social-webs'}
-              workpage={'https://github.com/MikhailKolomoitsev/firebase-copy'}
+              workpage={'https://mikhailkolomoitsev.github.io/firebase-copy/login'}
               code={'https://github.com/MikhailKolomoitsev/firebase-copy'}
+            />
+            <ProjectCard
+              height={200}
+              name={'Squares'}
+              desc={'Getting location of squares and notifiaction of them'}
+              workpage={'https://mikhailkolomoitsev.github.io/start-test/'}
+              code={'https://github.com/MikhailKolomoitsev/start-test'}
             />
           </div>
           <h3>BackEnd</h3>
