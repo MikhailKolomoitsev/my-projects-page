@@ -11,7 +11,16 @@ function App() {
       <div className="App">
         <ProfileCard />
           <h3>Main Projects</h3>
-          <div className='d-flex justify-content-between flex-wrap mb-3'>
+          <div className='d-flex justify-content-between align-items-center flex-wrap mb-3'>
+            <ProjectCard
+              name={'SuperHero FullStack'}
+              desc=
+              {'Superhero Generator'}
+              workpage={'https://mikhailkolomoitsev.github.io/main'}
+              code={'https://github.com/MikhailKolomoitsev/superhero-front'}
+              back={'https://github.com/MikhailKolomoitsev/superhero-back'}
+              height={300}
+            />
             <ProjectCard
               name={'BuyDevice FullStack'}
               desc=
