@@ -7,9 +7,9 @@ import { BrowserRouter } from "react-router-dom";
 function App() {
   return (
     <BrowserRouter>
-    <Container className='p-3' style={{ color: "white" }}>
-      <div className="App">
-        <ProfileCard />
+      <Container className='p-3' style={{ color: "white" }}>
+        <div className="App">
+          <ProfileCard />
           <h3>Main Projects</h3>
           <div className='d-flex justify-content-between align-items-center flex-wrap mb-3'>
             <ProjectCard
@@ -69,6 +69,12 @@ function App() {
               desc={'Getting location of squares and notifiaction of them'}
               workpage={'https://mikhailkolomoitsev.github.io/start-test/'}
               code={'https://github.com/MikhailKolomoitsev/start-test'}
+            />
+            <ProjectCard
+              height={200}
+              name={'JOTTO game - full-tested application'}
+              code={'https://github.com/MikhailKolomoitsev/test-context-base'}
+              workpage={'https://github.com/MikhailKolomoitsev/test-context-base'}
             />
           </div>
           <h3>BackEnd</h3>
@@ -154,7 +160,7 @@ function App() {
             />
           </div>
           <h3>WebUI</h3>
-          <div className='d-flex justify-content-between align-items-center flex-wrap mb-3' style={{width:555}}>
+          <div className='d-flex justify-content-between align-items-center flex-wrap mb-3' style={{ width: 555 }}>
             <ProjectCard
               height={200}
               name={'WebStudio'}
@@ -170,7 +176,7 @@ function App() {
               code={'https://mikhailkolomoitsev.github.io/goit-js-hw-11-color-switch/'}
             />
           </div>
-      </div>
+        </div>
       </Container>
     </BrowserRouter>
   );
