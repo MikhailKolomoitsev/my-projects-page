@@ -13,12 +13,12 @@ function App() {
           <h3>Main Projects</h3>
           <div className='d-flex justify-content-between align-items-center flex-wrap mb-3'>
             <ProjectCard
-              name={'SuperHero FullStack'}
+              name={'Weather App FullSTack'}
               desc=
-              {'Superhero Generator'}
-              workpage={'https://mikhailkolomoitsev.github.io/main'}
-              code={'https://github.com/MikhailKolomoitsev/superhero-front'}
-              back={'https://github.com/MikhailKolomoitsev/superhero-back'}
+              {'Weather App. NextJS Nestjs  Redux-Saga Postgress JWT GoogleOAuth'}
+              workpage={'https://github.com/MikhailKolomoitsev/weather-frontend'}
+              code={'https://github.com/MikhailKolomoitsev/weather-frontend'}
+              back={'https://github.com/MikhailKolomoitsev/weather-backend'}
               height={300}
             />
             <ProjectCard
@@ -30,6 +30,17 @@ function App() {
               back={'https://github.com/MikhailKolomoitsev/onlineShop-server'}
               height={300}
             />
+            <ProjectCard
+              name={'SuperHero FullStack'}
+              desc=
+              {'Superhero Generator'}
+              workpage={'https://mikhailkolomoitsev.github.io/main'}
+              code={'https://github.com/MikhailKolomoitsev/superhero-front'}
+              back={'https://github.com/MikhailKolomoitsev/superhero-back'}
+              height={300}
+            />
+          </div>
+          <div className='d-flex justify-content-between align-items-center flex-wrap mb-3'>
             <ProjectCard
               name={'KapustaProject Full Stack'}
               desc=
@@ -79,6 +90,13 @@ function App() {
           </div>
           <h3>BackEnd</h3>
           <div className='d-flex justify-content-between align-items-center flex-wrap mb-3'>
+          <ProjectCard
+              height={200}
+              name={'Users API'}
+              desc={'TypeScript, NestJS , MongoDB , RabbitMQ , CloudinaryAPI'}
+              workpage={'https://exercise-tracker-freecodecamp.herokuapp.com/'}
+              code={'https://github.com/MikhailKolomoitsev/freeCodeCampNodejs/tree/Exercise-Tracker'}
+            />
             <ProjectCard
               height={200}
               name={'Exercise tracker'}
