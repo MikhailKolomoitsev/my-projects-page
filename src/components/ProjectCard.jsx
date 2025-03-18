@@ -10,7 +10,9 @@ const ProjectCard = ({ name, desc, workpage, code, back,height }) => {
         return colors[index]
     }
     const color = getRandomColor()
-    const color2=getRandomColor()
+    const color2 = getRandomColor()
+    
+    console.log({name,back})
 
     return (
         <Col
@@ -31,7 +33,7 @@ const ProjectCard = ({ name, desc, workpage, code, back,height }) => {
                 <p style={{ textAlign: "center" }}>{desc}</p>
                 <ul style={{ listStyleType: "none", textAlign: "left" }}>
                     {workpage && <li><a href={workpage}>👉WorkPage</a></li>}
-                    <li><a href={code}>👉View code on GitHub</a></li>
+                    {code ? <li><a href={code}>👉View code on GitHub</a></li>:<>Code only by demo on meeting</>}
                     {back ? <li><a href={back}>👉BackEnd code on GitHub</a></li>:<></>}
                 </ul>
             </Card>

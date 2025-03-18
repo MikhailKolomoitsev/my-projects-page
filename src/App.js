@@ -12,13 +12,13 @@ function App() {
           <ProfileCard />
           <h3>Main Projects</h3>
           <div className='d-flex justify-content-between align-items-center flex-wrap mb-3'>
+
             <ProjectCard
-              name={'Weather App FullSTack'}
+              name={'Synaptask FullStack'}
               desc=
-              {'Weather App. NextJS Nestjs  Redux-Saga Postgress JWT GoogleOAuth'}
-              workpage={'https://github.com/MikhailKolomoitsev/weather-frontend'}
-              code={'https://github.com/MikhailKolomoitsev/weather-frontend'}
-              back={'https://github.com/MikhailKolomoitsev/weather-backend'}
+              {`Feature for Productivity: 
+                React, WS, Redux, Three.js, Shader Rendering, Python, MySQL `}
+              workpage={'https://synaptask.space/'}
               height={300}
             />
             <ProjectCard
@@ -41,6 +41,15 @@ function App() {
             />
           </div>
           <div className='d-flex justify-content-between align-items-center flex-wrap mb-3'>
+            <ProjectCard
+              name={'Weather App FullSTack'}
+              desc=
+              {'Weather App. NextJS Nestjs  Redux-Saga Postgress JWT GoogleOAuth'}
+              workpage={'https://github.com/MikhailKolomoitsev/weather-frontend'}
+              code={'https://github.com/MikhailKolomoitsev/weather-frontend'}
+              back={'https://github.com/MikhailKolomoitsev/weather-backend'}
+              height={300}
+            />
             <ProjectCard
               name={'KapustaProject Full Stack'}
               desc=
@@ -105,7 +114,7 @@ function App() {
             />
             <ProjectCard
               height={200}
-              name={'File Metadata Microservice'}
+              name={'File Metadata MS'}
               workpage={'https://final-metadata-microservice.herokuapp.com/'}
               code={'https://github.com/MikhailKolomoitsev/freeCodeCampNodejs/tree/File-Metadata-Microservice'}
             />
