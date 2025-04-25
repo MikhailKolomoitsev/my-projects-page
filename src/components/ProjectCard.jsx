@@ -1,44 +1,22 @@
 import React from 'react';
-import { Card, Col } from 'react-bootstrap'
-import './style.css'
+import './ProjectCard.css';
 
-const ProjectCard = ({ name, desc, workpage, code, back,height }) => {
-
-    const colors = ['#ff8c8c', '#8cb8ff', '#00991a', '#dbb44f', '#cb8cff', '#ff78ac']
-    function getRandomColor() {
-        const index = Math.floor(Math.random() * colors.length)
-        return colors[index]
-    }
-    const color = getRandomColor()
-    const color2 = getRandomColor()
-    
-    console.log({name,back})
-
+const ProjectCard = ({ name, desc, workpage, code, back, height }) => {
     return (
-        <Col
-            md={3}
-            className='mt-3'
-        >
-            <Card
-                className='d-flex align-items-center flex-direction-column justify-content-between p-2 project-card'
-                onClick={() => window.location.href = workpage }
-                style={{
-                    width: 310,
-                    height:height,
-                cursor: 'pointer',
-                backgroundColor: color,
-                boxShadow: `9px 5px 33px 5px ${color2}`
-            }} border={'light'} >
-                <h4 className='mt-3'>{name}</h4>
-                <p style={{ textAlign: "center" }}>{desc}</p>
-                <ul style={{ listStyleType: "none", textAlign: "left" }}>
-                    {workpage && <li><a href={workpage}>👉WorkPage</a></li>}
-                    {code ? <li><a href={code}>👉View code on GitHub</a></li>:<>Code only by demo on meeting</>}
-                    {back ? <li><a href={back}>👉BackEnd code on GitHub</a></li>:<></>}
+        <div className="project-card" style={{ height }}>
+            <div className="project-card-inner" onClick={() => workpage && window.open(workpage, '_blank')}>
+                <h4>{name}</h4>
+                {desc && <p className="project-desc">{desc}</p>}
+                <ul>
+                    {workpage && <li><a href={workpage} target="_blank" rel="noreferrer">👉 WorkPage</a></li>}
+                    {code
+                        ? <li><a href={code} target="_blank" rel="noreferrer">👉 View code on GitHub</a></li>
+                        : <li><i>Code available on demo only</i></li>}
+                    {back && <li><a href={back} target="_blank" rel="noreferrer">👉 Backend code</a></li>}
                 </ul>
-            </Card>
-        </Col>
-  )
+            </div>
+        </div>
+    );
 };
 
 export default ProjectCard;

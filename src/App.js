@@ -11,7 +11,7 @@ function App() {
         <div className="App">
           <ProfileCard />
           <h3>Main Projects</h3>
-          <div className='d-flex justify-content-between align-items-center flex-wrap mb-3'>
+          <div className="project-grid">
 
             <ProjectCard
               name={'Synaptask FullStack'}
@@ -40,7 +40,7 @@ function App() {
               height={300}
             />
           </div>
-          <div className='d-flex justify-content-between align-items-center flex-wrap mb-3'>
+          <div className="project-grid">
             <ProjectCard
               name={'Weather App FullSTack'}
               desc=
@@ -69,7 +69,7 @@ function App() {
             />
           </div>
           <h3>FrontEnd</h3>
-          <div className='d-flex justify-content-between align-items-center flex-wrap mb-3'>
+          <div className="project-grid">
             <ProjectCard
               height={200}
               name={'Currency chart'}
@@ -98,7 +98,7 @@ function App() {
             />
           </div>
           <h3>BackEnd</h3>
-          <div className='d-flex justify-content-between align-items-center flex-wrap mb-3'>
+          <div className="project-grid">
           <ProjectCard
               height={200}
               name={'Users API'}
@@ -125,7 +125,7 @@ function App() {
               code={'https://github.com/MikhailKolomoitsev/freeCodeCampNodejs/tree/File-Metadata-Microservice'}
             />
           </div>
-          <div className='d-flex justify-content-between align-items-center flex-wrap mb-3'>
+          <div className="project-grid">
             <ProjectCard
               height={200}
               name={'URL Shortener Microservice'}
@@ -146,7 +146,7 @@ function App() {
             />
           </div>
           <h3>JavaScript</h3>
-          <div className='d-flex justify-content-between align-items-center flex-wrap mb-3'>
+          <div className="project-grid">
             <ProjectCard
               height={150}
               name={'AIM Game'}
@@ -166,7 +166,7 @@ function App() {
               code={'https://github.com/MikhailKolomoitsev/js-marathon-cards-1'}
             />
           </div>
-          <div className='d-flex justify-content-between align-items-center flex-wrap mb-3'>
+          <div className="project-grid">
             <ProjectCard
               height={150}
               name={'Birthday Card'}

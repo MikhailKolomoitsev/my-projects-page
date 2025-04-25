@@ -22,7 +22,7 @@ const ProfileCard = () => {
                 <h3>Contacts📨</h3>
                 <ul style={{ listStyleType: "none", textAlign: "left" }}>
                     <li><a href="mailto:mihon.testosterone@gmail.com">mihon.testosterone@gmail.com</a></li>
-                    <li><a href="https://t.me/Rchbtch98">Telegram</a></li>
+                    <li><a href="https://t.me/mykhailo_elmejor">Telegram</a></li>
                     <li><a href="https://www.linkedin.com/in/mikhailkolomoitsev/">LinkedIn</a></li>
                 </ul>
             </div>
