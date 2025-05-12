@@ -1,0 +1,29 @@
+.music-player-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: transparent;
+    padding: 10px 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.music-player-button {
+    box-shadow: 0 0 10px rgb(255, 152, 152);
+    background: #fe53892e;
+    border: 1px solid #666;
+    border-radius: 6px;
+    padding: 6px 10px;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.music-player-slider {
+    width: 80px;
+    height: 1px;
+}

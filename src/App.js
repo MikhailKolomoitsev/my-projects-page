@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap'
 import ProfileCard from './components/ProfileCard'
 import ProjectCard from './components/ProjectCard';
 import { BrowserRouter } from "react-router-dom";
+import MusicPlayer from './components/MusicPlayer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <ProfileCard />
           <h3>Main Projects</h3>
           <div className="project-grid">
+        <MusicPlayer />
 
             <ProjectCard
               name={'Synaptask FullStack'}
