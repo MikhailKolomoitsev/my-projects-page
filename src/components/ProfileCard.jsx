@@ -16,8 +16,8 @@ const ProfileCard = () => {
                 </h2>
                 <ul className="profile-bullets">
                     <li>🚀 Working on React + Node.js projects</li>
-                    <li>📚 Learning Redux, SQL/NoSQL, WebSockets</li>
-                    <li>👨‍💻 Seeking FullStack Developer roles</li>
+                    <li>📚 Learning Team/Tech Leading</li>
+                    <li>👨‍💻 Seeking FullStack Developer/Lead roles</li>
                     <li>🧠 Fun fact: Between two pills I choose both 🔴🔵</li>
                 </ul>
                 <h4>📨 Contacts</h4>
