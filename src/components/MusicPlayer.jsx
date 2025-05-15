@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import ReactHowler from 'react-howler';
 import './MusicPlayer.css';
+import { ShineBorder } from './ShineBorder';
 
 const MusicPlayer = () => {
     const [playing, setPlaying] = useState(false);
@@ -13,12 +14,12 @@ const MusicPlayer = () => {
         const howl = howlerRef.current?.howler;
 
         if (!playing) {
-            howl?.volume(0);
+            howl?.volume(volume);
             setPlaying(true);
             setTimeout(() => howl?.fade(0, volume, 2000), 0);
         } else {
             howl?.fade(volume, 0, 1000);
-            setTimeout(() => setPlaying(false), 1000);
+            setPlaying(false);
         }
     };
 
@@ -40,9 +41,11 @@ const MusicPlayer = () => {
                     volume={volume}
                 />
             )}
+            <ShineBorder isOn={playing} borderWidth={5}>
             <button className="music-player-button" onClick={handleToggle}>
-                {playing ? 'Pause' : 'Music'} 💦
+                    {playing ? '⏸' : '▶️'}
             </button>
+            </ShineBorder>
             <input
                 className="music-player-slider"
                 type="range"

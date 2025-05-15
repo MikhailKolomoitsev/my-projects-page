@@ -14,13 +14,16 @@
 }
 
 .music-player-button {
-    box-shadow: 0 0 10px rgb(255, 152, 152);
+    position: relative;
+    z-index: 12;
     background: #fe53892e;
     border: 1px solid #666;
     border-radius: 6px;
-    padding: 6px 10px;
-    color: #007bff;
+    /* padding: 6px 10px; */
+    color: #fff;
     cursor: pointer;
+    width: 30px;
+    height: 30px;
 }
 
 .music-player-slider {
