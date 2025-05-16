@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import ReactHowler from 'react-howler';
 import './MusicPlayer.css';
 import { ShineBorder } from './ShineBorder';
+import AnimatedMusicNotes from './AnimatedMusicNotes';
 
 const MusicPlayer = () => {
     const [playing, setPlaying] = useState(false);
@@ -34,13 +35,14 @@ const MusicPlayer = () => {
             {hasInteracted && (
                 <ReactHowler
                     ref={howlerRef}
-                    src={`${process.env.PUBLIC_URL}/streams.mp3`}
+                    src={`${process.env.PUBLIC_URL}/chill.mp3`}
                     playing={playing}
                     loop={true}
                     html5={true}
                     volume={volume}
                 />
             )}
+            <AnimatedMusicNotes isPlaying={playing} />
             <ShineBorder isOn={playing} borderWidth={5}>
             <button className="music-player-button" onClick={handleToggle}>
                     {playing ? '⏸' : '▶️'}
