@@ -1,10 +1,20 @@
 .App {
-  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 body::before {
@@ -47,8 +57,35 @@ body::before {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
   margin-bottom: 40px;
+  padding: 0 16px;
 }
 
+@media (max-width: 480px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 0 12px;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    margin-top: 32px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .d-flex.justify-content-between {
+    flex-direction: column;
+    align-items: stretch !important;
+  }
+}
 
 
 @keyframes App-logo-spin {
