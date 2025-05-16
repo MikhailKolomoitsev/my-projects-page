@@ -1,0 +1,23 @@
+.chatbot-popup-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.chat-popup-button {
+    padding: 12px 16px;
+    background: #171717;
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+    color: #fff;
+    box-shadow: 0 0 12px rgba(0, 200, 255, 0.4);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.chat-popup-button:hover {
+    background: #1f1f1f;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+}

@@ -4,6 +4,7 @@ import ProfileCard from './components/ProfileCard'
 import ProjectCard from './components/ProjectCard';
 import { BrowserRouter } from "react-router-dom";
 import MusicPlayer from './components/MusicPlayer';
+import ChatBot from './components/ChatBot';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
               {`Feature for Productivity: 
                 React, WS, Redux, Three.js, Shader Rendering, Python, MySQL `}
               workpage={'https://synaptask.space/'}
-              height={300}
+              
             />
             <ProjectCard
               name={'BuyDevice FullStack'}
@@ -30,7 +31,7 @@ function App() {
               workpage={'https://mikhailkolomoitsev.github.io/onlineShop-client/'}
               code={'https://github.com/MikhailKolomoitsev/onlineShop-client'}
               back={'https://github.com/MikhailKolomoitsev/onlineShop-server'}
-              height={300}
+              
             />
             <ProjectCard
               name={'SuperHero FullStack'}
@@ -39,7 +40,7 @@ function App() {
               workpage={'https://mikhailkolomoitsev.github.io/main'}
               code={'https://github.com/MikhailKolomoitsev/superhero-front'}
               back={'https://github.com/MikhailKolomoitsev/superhero-back'}
-              height={300}
+              
             />
           </div>
           <div className="project-grid">
@@ -50,7 +51,7 @@ function App() {
               workpage={'https://github.com/MikhailKolomoitsev/weather-frontend'}
               code={'https://github.com/MikhailKolomoitsev/weather-frontend'}
               back={'https://github.com/MikhailKolomoitsev/weather-backend'}
-              height={300}
+              
             />
             <ProjectCard
               name={'KapustaProject Full Stack'}
@@ -59,7 +60,7 @@ function App() {
               workpage={'https://hungry-montalcini-771fc2.netlify.app/'}
               code={'https://github.com/EKhoroshko/backend-kapusta'}
               back={'https://github.com/EKhoroshko/frontend-kapusta'}
-              height={300}
+              
             />
             <ProjectCard
               name={'Filmoteka'}
@@ -67,7 +68,7 @@ function App() {
               {'Team project about searching movies, and adding favorite movies to a client personal library. Vanilla JS, npm-packages, bootstrap and SCSS. Role: ScrumMaster'}
               workpage={'https://wlad-kryhin.github.io/project-JS-NightCoders/'}
               code={'https://github.com/wlad-kryhin/project-JS-NightCoders/tree/master'}
-              height={300}
+              
             />
           </div>
           <h3>FrontEnd</h3>
@@ -206,6 +207,7 @@ function App() {
             />
           </div>
         </div>
+        <ChatBot/>
       </Container>
     </BrowserRouter>
   );
