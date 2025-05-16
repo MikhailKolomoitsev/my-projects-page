@@ -25,6 +25,7 @@ const ProfileCard = () => {
                     <li><a href="mailto:mihon.testosterone@gmail.com">mihon.testosterone@gmail.com</a></li>
                     <li><a href="https://t.me/mykhailo_elmejor" target="_blank" rel="noreferrer">Telegram</a></li>
                     <li><a href="https://www.linkedin.com/in/mikhailkolomoitsev/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+                    <li>👉 <a href='https://calendly.com/mikhail-kolomoitsev/30min'>Schedule meeting</a> 👈 (after drop me a message anywhere)</li>
                 </ul>
             </div>
         </div>
