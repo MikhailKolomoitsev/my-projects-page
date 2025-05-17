@@ -18,7 +18,7 @@ const ChatBot = () => {
                     button.click();
                     localStorage.setItem("typebotHasBeenOpened", "true");
                 }
-            }, 10000); 
+            }, 12000); 
 
             return () => clearTimeout(timeout);
         }
