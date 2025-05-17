@@ -1,6 +1,7 @@
 .project-card {
     width: 100%;
     max-width: 310px;
+    height: 270px;
     border-radius: 16px;
     background: linear-gradient(145deg, #1e1e1e, #2c2c2c);
     color: white;
@@ -13,6 +14,12 @@
     justify-content: space-between;
 }
 
+.project-card-inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .project-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 32px rgba(255, 255, 255, 0.15);

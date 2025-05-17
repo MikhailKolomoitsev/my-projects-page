@@ -16,7 +16,6 @@ const ProfileCard = () => {
                 </h2>
                 <ul className="profile-bullets">
                     <li>🚀 Working on React + Node.js projects</li>
-                    <li>📚 Learning Team/Tech Leading</li>
                     <li>👨‍💻 Seeking FullStack Developer/Lead roles</li>
                     <li>🧠 Fun fact: Between two pills I choose both 🔴🔵</li>
                 </ul>
@@ -25,7 +24,8 @@ const ProfileCard = () => {
                     <li><a href="mailto:mihon.testosterone@gmail.com">mihon.testosterone@gmail.com</a></li>
                     <li><a href="https://t.me/mykhailo_elmejor" target="_blank" rel="noreferrer">Telegram</a></li>
                     <li><a href="https://www.linkedin.com/in/mikhailkolomoitsev/" target="_blank" rel="noreferrer">LinkedIn</a></li>
-                    <li>👉 <a href='https://calendly.com/mikhail-kolomoitsev/30min'>Schedule meeting</a> 👈 (after drop me a message anywhere)</li>
+                    <li><a href="https://github.com/MikhailKolomoitsev" target="_blank" rel="noreferrer">GitHub</a></li>
+                    <li>👉 <a href='https://calendly.com/mikhail-kolomoitsev/30min' target="_blank">Schedule meeting</a> 👈 (then drop me a message)</li>
                 </ul>
             </div>
         </div>
