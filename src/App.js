@@ -77,7 +77,7 @@ function App() {
               code={'https://github.com/MikhailKolomoitsev/goit-markup-hw-08'}
             />
           </div>
-          <h5>More projects could be found on My GitHub page (include TS, Docker, Redis, RabbitMQ)</h5>
+          <h5>**More projects could be found on My GitHub page (include TS, Docker, Redis, RabbitMQ)</h5>
           {/* <h3>Legacy</h3>
           <div className='project-grid' >
             <ProjectCard

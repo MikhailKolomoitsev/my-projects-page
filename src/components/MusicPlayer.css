@@ -1,7 +1,7 @@
 .music-player-container {
     position: fixed;
-    bottom: 12px;
-    left: -2px;
+    bottom: calc(12px + env(safe-area-inset-bottom));
+    left: 12px;
     background: transparent;
     padding: 10px 12px;
     border-radius: 10px;
@@ -16,17 +16,35 @@
 .music-player-button {
     position: relative;
     z-index: 12;
-    background: #fe53892e;
-    border: 1px solid #666;
-    border-radius: 6px;
-    /* padding: 6px 10px; */
+    background: rgba(254, 83, 137, 0.25);
+    border: 0.1px solid #88888800;
+    border-radius: 8px;
     color: #fff;
     cursor: pointer;
     width: 30px;
     height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .music-player-slider {
     width: 80px;
     height: 1px;
+}
+
+@media (max-width: 480px) {
+    .music-player-container {
+        bottom: calc(7px + env(safe-area-inset-bottom));
+        left: -5px;
+        transform: scale(0.8);
+    }
+
+    .music-player-button {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
 }

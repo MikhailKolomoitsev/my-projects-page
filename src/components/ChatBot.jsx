@@ -3,26 +3,32 @@ import { useEffect } from "react";
 
 const ChatBot = () => {
     useEffect(() => {
-        const timeout = setTimeout(() => {
-            const bubbleEl = document.querySelector("typebot-bubble");
+        const hasBeenOpened = localStorage.getItem("typebotHasBeenOpened");
 
-            if (!bubbleEl) return;
+        if (!hasBeenOpened) {
+            const timeout = setTimeout(() => {
+                const bubbleEl = document.querySelector("typebot-bubble");
 
-            const shadowRoot = bubbleEl.shadowRoot;
-            const button = shadowRoot?.querySelector("button");
+                if (!bubbleEl) return;
 
-            if (button) {
-                button.click(); // 🔥 simulate click to open chat
-            }
-        }, 3000);
+                const shadowRoot = bubbleEl.shadowRoot;
+                const button = shadowRoot?.querySelector("button");
 
-        return () => clearTimeout(timeout);
+                if (button && !localStorage.getItem("typebotHasBeenOpened")) {
+                    button.click();
+                    localStorage.setItem("typebotHasBeenOpened", "true");
+                }
+            }, 10000); 
+
+            return () => clearTimeout(timeout);
+        }
     }, []);
 
     return (
         <Bubble
             typebot="open-ai-assistant-chat-1lurnsr"
             apiHost="https://typebot.io"
+            onOpen={() => { localStorage.setItem("typebotHasBeenOpened", "true"); }}
             theme={{
                 button: {
                     backgroundColor: "#D27A7D",
