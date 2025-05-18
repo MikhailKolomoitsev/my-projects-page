@@ -5,11 +5,13 @@ import ProjectCard from './components/ProjectCard';
 import { BrowserRouter } from "react-router-dom";
 import MusicPlayer from './components/MusicPlayer';
 import ChatBot from './components/ChatBot';
+import ParticlesBackground from './components/ParticlesBackground';
 
 function App() {
   return (
     <BrowserRouter>
       <Container className='p-3' style={{ color: "white" }}>
+        <ParticlesBackground />
         <div className="App">
           <ProfileCard />
           <h3>Main Projects</h3>
