@@ -39,22 +39,38 @@ const ParticlesBackground = () => {
                         random: true,
                         straight: false
                     },
-                    links: { enable: false }
+                    links: {
+                        color: "#00ffe0",
+                        distance: 120,
+                        enable: true,
+                        opacity: 0.4,
+                        width: 1,
+                    },
                 },
                 interactivity: {
                     events: {
-                        onHover: { enable: true, mode: "bubble" },
+                        onHover: {
+                            enable: true,
+                            mode: ["bubble", "grab"],
+                            parallax: { enable: true, smooth: 15, force: 80 } // 👈 optional for "depth"
+                        },
                         resize: true
                     },
                     modes: {
                         bubble: {
-                            distance: 100,
-                            duration: 2,
-                            size: 7,
-                            opacity: 0.8,
-                            speed: 3,
+                            distance: 300,   
+                            duration: 1.5,
+                            size: 8,
+                            opacity: 0.9,
+                            speed: 2,
                             color: {
                                 value: ["#ff9ff3", "#f368e0", "#48dbfb", "#00d2d3", "#c8d6e5"]
+                            }
+                        },
+                        grab: {
+                            distance: 10,
+                            links: {
+                                opacity: 0.5
                             }
                         }
                     }
